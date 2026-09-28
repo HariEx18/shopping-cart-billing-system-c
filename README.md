@@ -1,11 +1,19 @@
 **Shopping Cart Billing System in C**
 
-*Features*:
-- User item input
-- Price and quantity calculation
-- Bill generation
-- Formatted output
+A simple billing system developed in C.
 
-*Built using*:
-- C Programming
-- VS Code
+*Features*:
+- Item name input
+- Price input
+- Quantity input
+- Total bill calculation
+- Formatted bill output
+
+*Concepts Used*:
+- Variables
+- User Input
+- Strings
+- Arithmetic Operations
+- Formatted Output
+
+*Author*: *Hari*
