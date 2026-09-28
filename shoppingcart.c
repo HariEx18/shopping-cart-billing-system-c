@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <string.h>
+
 
 int main()
 {
@@ -7,22 +9,27 @@ int main()
    int quantity = 0;
    float total = 0.0f;
 
-    printf("What item would you like to buy?");
+    printf("What item would you like to buy ? ");
     fgets(item, sizeof(item), stdin);
-    printf("What is the price of the item you chose ?");
+    item[strcspn(item, "\n")] = '\0';
+    printf("What is the price of the item you chose ? ");
     scanf(" %f", &price);
-    printf("How many would you like to Purchase ?");
+    printf("How many would you like to Purchase ? ");
     scanf(" %d", &quantity);
 
     total = price * quantity;
-    printf("\n==============================\n");
+    printf("\n=================================\n");
     printf("         PURCHASE BILL\n");
-    printf("==============================\n");
-    printf("%-10s : %s", "Item", item);
-    printf("%-10s : $%.2f\n", "Price", price);
-    printf("%-10s : %d\n", "Quantity", quantity);
-    printf("------------------------------\n");
-    printf("%-10s : $%.2f\n", "Total", total);
-    printf("==============================\n");
+    printf("=================================\n");
+
+    printf("Item     : %s\n", item);
+    printf("Price    : $%.2f\n", price);
+    printf("Quantity : %d\n", quantity);
+
+    printf("---------------------------------\n");
+
+    printf("Total    : $%.2f\n", total);
+
+    printf("=================================\n");
     return 0;
 }
