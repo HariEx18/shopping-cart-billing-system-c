@@ -51,5 +51,6 @@ This project was built as part of my programming learning journey to strengthen 
 
 ## Author
 
-Hari
-First-Year Electronics and Communication Engineering (ECE) Student
+**Hari**  
+First-Year Electronics and 
+Communication Engineering (ECE) Student
